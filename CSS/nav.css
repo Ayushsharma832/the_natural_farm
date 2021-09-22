@@ -152,7 +152,7 @@ a.active, a:hover
 
 .bg-img {
     
-    background-image: url("../home_bg.jpg");
+    background-image: url("/home_bg.jpg");
     min-height: 100vh;
 
   /* Center and scale the image nicely */
@@ -166,3 +166,72 @@ a.active, a:hover
 }
 
 
+.heading
+{
+    position: relative;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    text-shadow: 10px 5px 11px white;
+    font-weight: 900;
+    color: #0296ff;
+    font-size: 100px;
+    letter-spacing: 12px;
+}
+
+.slogan
+{
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 25px;
+    color: #8afbbd;
+    font-weight: bold;
+    letter-spacing: 10px;
+    text-shadow: 6px 3px 6px black;
+    
+}
+
+.para 
+{
+    margin-top: 50px;
+    padding: 20px 224px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.card-head
+{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 60px;
+    margin-top: 200px;
+    letter-spacing: 17px;
+    font-weight: bold;
+    text-shadow: 10px 7px 10px black;
+}
+
+
+.parent-card
+{
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    row-gap: 40px;
+    column-gap: 40px;
+    margin-top: 10px;
+    padding: 0px 50px;
+}
+
+.parent-card .child-card
+{
+    display: flex;
+    padding: 35px 130px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(5px);
+}
