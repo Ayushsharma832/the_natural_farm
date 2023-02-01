@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*
+{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    
+}
+
+body
+{
+    font-family: montserrat, sans-serif;
+    background-image: url(sellmenubg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow-x: hidden;
+    height: 100%;
+    color: white;
+    width: 100%;
+}
+
+hr
+{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.head
+{
+    
+    margin-top: 100px;
+    text-align: center;
+}
+
+.veggi-logo
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.cards
+{
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px);
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+    height: 700px;
+    border-radius: 50px;
+}
+
+#secname
+{
+    text-align: center;
+    padding-top: 20px;
+    text-decoration: underline;
+    color: skyblue;
+    font-weight: bold;
+}
+
+#break
+{
+    width: 900px;
+
+}
+
+.breakdiv
+{
+    margin-top: 40px;
+}
+
+.card-group
+{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    text-align: center;
+    column-gap: 50px;
+    padding: 5px 60px;
+}
+
+.child-cards
+{
+    margin-top: 40px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(15px);
+    padding: 25px 10px;
+    border-radius: 30px;
+}
+
+.addlink
+{
+    background-color: lightgreen;
+    padding: 4px 12px;
+    border-radius: 25px;
+}
+
+.addlink:hover
+{
+    cursor: pointer;
+    background-color: greenyellow;
+}
+
+.selldiv
+{
+    margin-top: 30px;
+}

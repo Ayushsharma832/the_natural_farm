@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sell2.css">
+    <title>Fill Up Details</title>
+</head>
+<body>
+    <div class="initial">
+        <div class="main">
+            <div class="main-head">
+                <h1>The Natural Farm</h1>
+                <p>DIGITALIZING THE AGRICULTURAL PROCESS</p>
+            </div>
+            
+            <div class="form">
+                <form action="sell_reg.php" method="POST" name="f">
+                    <label  class="inputs"  for="">Enter Your Name</label>
+    
+                    <input  class="inputs, inp-filed" type="text" name="name" id="" placeholder="Ex. Arihant Kamde" required>
+    
+                    <label  class="inputs" for="">Enter Your Contact Number</label>
+    
+                    <input  class="inputs, inp-filed" type="number" name="contact_no" id="" placeholder="Ex. 1234567890" required>
+    
+                    <label  class="inputs" for="">Enter Your Email</label>
+                    
+                    <input  class="inputs, inp-filed" type="email" name="email" id="" placeholder="yourname@gmail.com">
+    
+                    <label  class="inputs" for="">Enter Your Address</label>
+    
+                    <input  class="inputs, inp-filed" type="text" name="address" id="" placeholder="Stree no., locality, district, city." required>
+                    
+                    <div class="btn-grp">
+                        <button class="button" id="btn" type="submit" onclick="f.action='sell.html'">Go Back</button>
+                        <button class="button" id="btn" type="submit">Submit</button>
+
+                    </div>
+    
+                </form>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

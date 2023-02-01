@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+
+body
+{
+    font-family: montserrat, sans-serif;
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+
+}
+
+
+.navigation_bar
+{
+    display: flex;
+    margin: 15px 20px;
+    padding: 10px 5px;
+    justify-content: space-around;
+    font-size: 24px;
+    font-weight: bold;
+    list-style: none;
+}
+
+.list_element
+{
+    text-decoration: none;
+    margin: 0px 50px;
+    font-size: 23px;
+    font-weight: bold;
+    color: white;
+    text-shadow: black 8px 6px 8px;
+}
+
+.main
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(600px, 1fr));
+    row-gap: 40px;
+    column-gap: 30px;
+    justify-items: center;
+    position: relative;
+    margin: 100px;
+}
+
+.intro, .heading
+{
+    color: white;
+}
+
+.heading
+{
+    margin-top: 150px;
+    text-align: center
+}
+
+.intro
+{
+    padding: 10px 0px;
+}
+
+.list 
+{
+    list-style: inside;
+    padding: 5px 0px;
+}
+
+.list_gone
+{
+    margin: 15px 0px;
+    font-size: 18px;
+}
+
+#head
+{
+    font-size: 50px;
+    letter-spacing: 8px;
+    font-weight: bold;
+    text-shadow: 5px 4px 25px green;
+}
+
+.form-box
+{
+    width: 390px;
+    height: 500px;
+    position: relative;
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(4px);
+    padding: 5px;
+    overflow: hidden;
+}
+
+.button-box
+{
+    width: 220px;
+    margin: 35px auto;
+    box-shadow: 0 0 20px 9px rgb(190, 255, 190);
+    position: relative;
+    border-radius: 30px;
+}
+
+.toggle-btn
+{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+
+#btn
+{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, rgb(62, 204, 62), rgb(12, 231, 12));
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.input-group
+{
+    top: 180px;
+    position: absolute;
+    margin: 0px 0px;
+    width: 280px;
+    transition: 0.5s;
+}
+
+.input-field
+{
+    width: 100%;
+    padding: 10px 0;
+    margin: 10px auto;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 1px solid rgb(153, 153, 153);
+    outline: none;
+    color: white;
+    background: transparent;
+}
+
+.submit-btn
+{
+    width: 85%;
+    cursor: pointer;
+    padding: 10px 30px;
+    display: block;
+    margin: 40px 25px;
+    background: linear-gradient(to right, rgb(62, 204, 62), rgb(12, 231, 12));
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+
+::placeholder {
+    color: black;
+    opacity: 1; 
+  }
+  
+
+#login
+{
+    left: 50px;
+}
+
+#register
+{
+    left: 450px;
+}
+
+
+@media screen and (max-width:1300px) {
+
+    .list_element {
+        text-decoration: none;
+        margin: 0px 20px;
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        text-shadow: black 8px 6px 8px;
+    }
+
+    #head
+    {
+        font-size: 35px;
+        letter-spacing: 4px;
+    }
+
+    .slogan
+    {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:900px) {
+
+    .list_element {
+        text-decoration: none;
+        margin: 0px 10px;
+        font-size: 15px;
+        font-weight: bold;
+        color: white;
+        text-shadow: black 8px 6px 8px;
+    }
+
+    .para
+    {
+        font-size: 16px;
+    }
+
+    .list_gone
+    {
+        font-size: 12px;
+    }
+
+    .main
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .form-box
+    {
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .list_element {
+        text-decoration: none;
+        margin: 0px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        text-shadow: black 8px 6px 8px;
+    }
+
+    .heading {
+        margin-top: 50px;
+    }
+
+    .navigation_bar
+    {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    #heading
+    {
+        font-size: 18px;
+    }
+
+    #head
+    {
+        font-size: 22px;
+    }
+
+    .slogan
+    {
+        font-size: 10px;
+    }
+
+    .form-box
+    {
+        width: 270px;
+        height: 450px;
+    }
+
+    .button-box {
+        width: 200px;
+    }
+
+    #btn
+    {
+        width: 90px;
+    }
+
+    .toggle-btn {
+        padding: 13px 31px;
+        font-size: 11px;
+    }
+    .input-group{
+        margin: 0px -40px;
+        padding: 0px 10px;
+    }
+
+    .submit-btn 
+    {
+        margin: auto;
+        width: auto;
+    }
+}
+
+
+@media screen and (max-width:420px) 
+{
+    .form-box
+    {
+        margin: 0px -27px;
+    }
+}
+
+@media screen and (max-width:362px) 
+{
+    .form-box
+    {
+        margin: 0px -58px;
+    }
+}

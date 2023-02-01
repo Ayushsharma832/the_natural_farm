@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login And Registration</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    
+    <nav>
+        <ul class="navigation_bar">
+            <li class="nav_items" ><a class="list_element" id="heading" href="../index.html">The Natural Farm</a></li>
+            <li class="nav_items"><a class="list_element" href="../index.html">Learn</a></li>
+            <li class="nav_items"><a class="list_element" href="../buy/buy.html">Buy</a></li>
+            <li class="nav_items"><a class="list_element" href="../sell/sell.html">Sell</a></li>
+            <li class="nav_items"><a class="list_element" href="../contact_us/contact.html">Contact US</a></li>
+            <li class="nav_items"><a class="list_element" href="login.html">Log In</a></li>
+        </ul>
+    </nav>
+
+    <div class="heading">
+        <span id="head">
+            The Natural Farm
+        </span>
+        <div class="slogan">
+            DIGITALIZING THE AGRICULTURAL PROCESS
+        </div>
+    </div>
+
+
+    <div class="main">
+        <div class="intro">
+            <div class="para">
+                <h2>
+                    Why You Sould Choose The Natural Farm
+                </h2>
+                <div class="list">
+                    <ul class="list2">
+                        <li class="list_gone"><span>Promoting much needed digitalization in the whole agricultural process is our main
+                                aim.
+                            </span></li>
+                        <li class="list_gone"><span>No need to go outside for the Groceries in this COVID-19 situation when you can shop
+                                your Groceries online.
+                            </span></li>
+                        <li class="list_gone"><span> If you are a Beginners then we can help you grow your food at home.</span></li>
+                        <li class="list_gone"><span>Zero involvement of any intermediate between buyer and seller can makes your shopping
+                                way too cheaper.
+                            </span></li>
+                        <li class="list_gone"><span>By this website we can make the process of producing and marketing very exciting.
+                            </span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button class="toggle-btn" onclick="login()">Log In</button>
+                <button class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <form action="login_conn.php" method="POST" id="login" class="input-group">
+                <input type="text" class="input-field" name="name" placeholder="User Id" required>
+                <input type="text" class="input-field" name="passwd" placeholder="Enter Pasword" required>
+                <button type="submit" class="submit-btn">Log In</button>
+            </form>
+
+            <form action="reg_conn.php" method="POST" id="register" class="input-group">
+                <input type="text" class="input-field" name="name" placeholder="User Id" required>
+                <input type="email" class="input-field" name="email" placeholder="Email Id" required>
+                <input type="text" class="input-field" name="passwd" placeholder="Enter Pasword" required>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+
+        function register() {
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+
+        }
+
+        function login() {
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+
+        }
+
+    </script>
+
+</body>
+
+</html>
